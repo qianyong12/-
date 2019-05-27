@@ -3,10 +3,15 @@
 
 #include "pch.h"
 #include <iostream>
-
+#include "Solution.h"
 int main()
 {
     std::cout << "Hello World!\n"; 
+	Solution s;
+	int b[9] = { 1,8,6,2,5,4,8,3,7};
+	vector<int> a(b, b + 9); //从数组中获得初值
+	int area = s.maxArea(a);
+	std::cout << "max area is:"<<area<<endl;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
